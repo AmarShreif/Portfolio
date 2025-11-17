@@ -1,0 +1,6 @@
+@media (min-width: 768px) {
+  nav {
+    background: linear-gradient(to top, black 30%, #00bc7d);
+    box-shadow: 0 0 5px #00bc7d;
+  }
+}

@@ -2,6 +2,8 @@
 @import 'flowbite/src/themes/default';
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --main-color: 00bc7d;
 }

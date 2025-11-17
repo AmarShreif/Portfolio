@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding, signal, WritableSignal } from '@angular/core';
 import { initFlowbite } from 'flowbite';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
@@ -12,4 +12,10 @@ export class NavbarComponent {
   ngOnInit(): void {
     initFlowbite();
   }
+  // darkMode = signal<boolean>(false);
+  // darkMode: WritableSignal<boolean> = signal(false);
+
+  // @HostBinding('class.dark') get mode() {
+  //   return this.darkMode();
+  // }
 }

@@ -2,9 +2,7 @@ import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { ProjectsComponent } from './components/projects/projects.component';
+declare var WOW: any;
 
 @Component({
   selector: 'app-root',
@@ -14,4 +12,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 })
 export class App {
   protected readonly title = signal('protfolio');
+  ngOnInit(): void {
+    new WOW().init();
+  }
 }
